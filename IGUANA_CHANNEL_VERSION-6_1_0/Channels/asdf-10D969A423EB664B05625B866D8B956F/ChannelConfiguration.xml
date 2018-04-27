@@ -1,0 +1,26 @@
+<channel
+   name="asdf"
+   guid="10D969A423EB664B05625B866D8B956F"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="asdf-To-D2wt3EEq2ko6Xs"
+      commit_id="cb9aa8d175efede5c2fe26d711b205184de85bf7"
+      commit_comment="Import Translators: 6.1">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="1345942127E68ED4FB8605D0A391DC84"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="/Applications/iNTERFACEWARE-Iguana61_Install3/autoack.vmd"
+      port="5345"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+</channel>
