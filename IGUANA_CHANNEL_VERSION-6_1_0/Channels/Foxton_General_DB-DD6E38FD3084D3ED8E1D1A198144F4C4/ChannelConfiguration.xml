@@ -1,0 +1,19 @@
+<channel
+   name="Foxton General DB"
+   guid="DD6E38FD3084D3ED8E1D1A198144F4C4"
+   description="Save processed data to database"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Foxton_General_DB-To-LNDQJHYa2H9JXF"
+      commit_id="135cdf4e763e39c7a4f3a3fbe0db4eed615453b0"
+      commit_comment="first">
+      <dequeue_list>
+         <dequeue
+            source_name="Foxton General processing"
+            dequeue_guid="9A4F905CAF252E90EE52B78ADE2CC3D5"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_channel/>
+</channel>

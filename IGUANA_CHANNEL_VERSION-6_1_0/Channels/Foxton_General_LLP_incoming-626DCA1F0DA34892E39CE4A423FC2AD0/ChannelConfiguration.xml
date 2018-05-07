@@ -1,0 +1,26 @@
+<channel
+   name="Foxton General LLP incoming"
+   guid="626DCA1F0DA34892E39CE4A423FC2AD0"
+   description="Incoming LLP data feed"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Foxton_General_incoming-To-j8ewfIi1sYxsrp"
+      commit_id="fe3bf082f2cbf6755bb656f72cdd3cac8cbc9b2f"
+      commit_comment="first">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="C40B4B561FABF37E0FBD8BEA29AF0393"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="/Applications/iNTERFACEWARE-Iguana61_install6/autoack.vmd"
+      port="5346"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+</channel>

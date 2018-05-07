@@ -1,0 +1,16 @@
+<channel
+   name="Foxton General processing"
+   guid="0830E50FE66F4326D79A2AFFAD25F9C5"
+   description="Process LLP data"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_channel>
+      <dequeue_list>
+         <dequeue
+            source_name="Foxton General LLP incoming"
+            dequeue_guid="73F45BB9F187F39F197F261A125058CF"/>
+      </dequeue_list>
+   </to_channel>
+   <from_channel/>
+</channel>
