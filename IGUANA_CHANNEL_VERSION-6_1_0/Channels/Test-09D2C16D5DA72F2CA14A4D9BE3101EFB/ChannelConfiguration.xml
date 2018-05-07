@@ -1,0 +1,26 @@
+<channel
+   name="Test"
+   guid="09D2C16D5DA72F2CA14A4D9BE3101EFB"
+   description=""
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="qwer-To-Ks6IRIB9OaPAik"
+      commit_id="5d3a526dbae0973204d7189774024f71b6778d6a"
+      commit_comment="o">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="E1294972E814C6442477AA9DF665F05C"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="/Applications/iNTERFACEWARE-Iguana61_install6/autoack.vmd"
+      port="5345"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+</channel>
